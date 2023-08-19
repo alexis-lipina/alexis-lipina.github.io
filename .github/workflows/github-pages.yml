@@ -9,7 +9,9 @@ jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses:  actions/checkout@v2
       - uses:  helaili/jekyll-action@v2
+      - uses:  actions/jekyll-build-pages@v1.0.8
+            
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
