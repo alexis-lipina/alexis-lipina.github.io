@@ -1,20 +1,20 @@
 # site settings
 title: Alexis Lipina
-subtitle: subtitle here
-email: youremailaddress@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+subtitle: Game Developer
+email: alexis.lipina@gmail.com
+description: Here you can explore some projects I've worked on. <br /> Please hire me!!!!🥺
 baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
-street_address: nope
-city: rochester
-state: ny
-zip_code: nope
-country: United States of America
-phone: nope
+street_address:
+city: Rochester
+state: NY
+zip_code:
+country: <br>United States of America
+phone: 
 
 # homepage tiles
-tiles-source: pages # accepts "posts" or "pages"
+tiles-source: posts # accepts "posts" or "pages"
 tiles-count: 6
 
 # social settings (key must match name of font awesome icon)
@@ -26,8 +26,8 @@ socials:
   GitLab:
   Google-Plus: https://plus.google.com/u/0/+AndrewBanchich
   Instagram:
-  LinkedIn: https://www.linkedin.com/in/andrew-banchich-a4ba1195
-  Twitter: https://twitter.com/andrewbanchich
+  LinkedIn: https://www.linkedin.com/in/alexis-lipina-251a55162/
+  Twitter: https://twitter.com/AlexisLipina
   Facebook:
   Slack:
 
