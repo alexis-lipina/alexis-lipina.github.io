@@ -78,3 +78,58 @@
 	@import 'layout/footer';
 	@import 'layout/wrapper';
 	@import 'layout/menu';
+
+details.accordion {
+	border: solid 1px _palette(border);
+	border-radius: 4px;
+	margin-bottom: 1.5em;
+	background-color: _palette(bg-alt);
+
+summary {
+    cursor: pointer;
+    padding: 1em 1.25em;
+    font-weight: _font(weight-bold);
+    letter-spacing: _font(letter-spacing-alt);
+    text-transform: uppercase;
+    font-size: 0.8em;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    /* Custom "+" icon on the right */
+    &::after {
+      content: "+";
+      font-size: 1.4em;
+      line-height: 1;
+      transition: transform 0.2s ease;
+    }
+}
+
+  /* Hide default browser disclosure triangle */
+summary::-webkit-details-marker {
+	display: none;
+}
+
+  /* Rotate "+" to "×" when open */
+  &[open] summary {
+    border-bottom: solid 1px _palette(border);
+    
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+
+  .accordion-content {
+    padding: 1.25em;
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
